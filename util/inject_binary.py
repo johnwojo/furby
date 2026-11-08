@@ -3,8 +3,8 @@ import os
 
 # Modify these paths to select which input DLC file you want to
 # modify and where the output file should end up.
-TARGET="/path/to/tu003410.dlc"
-OUTFILE="/path/to/custom.dlc"
+TARGET="tu003410.dlc"
+OUTFILE="believer.dlc"
 
 # This is where you define which content you want to insert into
 # the DLC files (A1800 audio files, custom LCD graphics, ...)
@@ -20,11 +20,8 @@ OUTFILE="/path/to/custom.dlc"
 # * 22357 * 40 + 27 injects into action 75.0.1.4 and 75.0.1.7
 # * 24468 * 40 + 15 injects into action 75.0.4.0
 INJECTIONS=[{
-	"path" : "/path/to/sound1.a18",
-	"offset" : 8270 * 40 +  7 # some offset from the list, or try your own
-}, {
-	"path" : "path/to/sound2.a18",
-	"offset" : 8400 * 40 + 13 # another offset from the list above
+	"path" : "believer_16k_wav.a18",
+	"offset" : 11188 * 40 +  11 # some offset from the list, or try your own
 }]
 
 # Get file sizes and open all of the payloads
